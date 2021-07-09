@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bckgrnd2"
+    tools:context=".CalendarViewer">
+
+    <com.applandeo.materialcalendarview.CalendarView
+        android:id="@+id/calendarView"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:requiresFadingEdge="vertical"
+        app:abbreviationsBarColor="#3F826F"
+        app:abbreviationsLabelsColor="@color/white"
+        app:anotherMonthsDaysLabelsColor="#66FFFFFF"
+        app:daysLabelsColor="@color/white"
+        app:headerColor="#ACCC9A"
+        app:headerLabelColor="@color/black"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:pagesColor="#116A70"
+        app:todayLabelColor="#FFAA00" />
+
+
+    <ListView
+        android:id="@+id/idListIntervention"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:background="#116A70"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/calendarView" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
